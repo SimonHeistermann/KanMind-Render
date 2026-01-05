@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanMind - Dashboard</title>
+
+    <link rel="stylesheet" href="../../shared/css/variables.css">
+    <link rel="stylesheet" href="../../shared/css/standard.css">
+    <link rel="stylesheet" href="../../shared/css/fonts.css">
+    <link rel="stylesheet" href="../../shared/css/assets.css">
+    <link rel="stylesheet" href="../../shared/css/header_footer.css">
+
+    <script src="../../shared/js/ui_helper.js"></script>
+    <script src="../../shared/js/api.js"></script>
+    <script src="../../shared/js/header.js"></script>
+
+    <script>
+        function checkNav(){
+            if(getAuthUserId() == null) document.querySelector("nav").remove();
+        };
+    </script>
+</head>
+
+<body onload="setHeader();checkNav()">
+    <header onclick="redirectToDashboard()" class="main_header w_full">
+        <img src="../../assets/icons/logo_icon.svg" alt="" srcset="">
+        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+    </header>
+    <main class="w_full d_flex_ss_gl font_white_color">
+
+        <nav class="font_sec_color w_full">
+            <a class="link_secondary" href="../dashboard/">Dashboard</a>
+            /
+            <a class="link_secondary" href="./index.html">Privacy Policy</a>
+        </nav>
+
+        <h1 class="font_prime_color">Privacy Policy</h1>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Introduction</h2>
+            <p>
+                This Privacy Policy explains how KanMind ("we", "our", or "us") collects, uses, stores, and protects personal data of users ("you") who register and use our Kanban board service. We respect your privacy and are committed to protecting your personal information in compliance with applicable data protection laws, including those applicable from Germany and the European Union.
+            </p>
+            <p>
+                We host our service on Render (<a href="https://dashboard.render.com/web/srv-d3fm9295pdvs73bba7mg/deploys/dep-d3fn2l56ubrc73c2rrv0" class="link_secondary" target="_blank" rel="noopener noreferrer">render.com</a>), which processes and stores data on our behalf. Please note that by using our service, some responsibility for data security and processing is shared with this hosting provider.
+            </p>
+            <p>
+                This policy aims to minimize our liability and clearly delineate responsibilities.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Information We Collect</h2>
+            <p>
+                When you register and use KanMind, we collect the following personal data:
+            </p>
+            <ul>
+                <li>Name and username</li>
+                <li>Email address</li>
+                <li>Password (stored securely and hashed)</li>
+                <li>Usage data about your interactions with the Kanban board (e.g., tasks created, modified)</li>
+                <li>Device and log information such as IP address, browser type, and access times</li>
+            </ul>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>How We Use Your Data</h2>
+            <p>
+                We use your personal data to:
+            </p>
+            <ul>
+                <li>Provide, operate, and maintain the Kanban board service</li>
+                <li>Manage your registration, authentication, and account security</li>
+                <li>Improve our services by analyzing usage patterns</li>
+                <li>Communicate important updates, changes, or support information</li>
+                <li>Comply with legal obligations</li>
+            </ul>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Legal Basis for Processing</h2>
+            <p>
+                Our legal basis for processing your personal data includes your consent when you register and use the service, the necessity to perform the contract (providing the service), and compliance with legal obligations.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Data Sharing and Third Parties</h2>
+            <p>
+                We do not sell or rent your personal information to third parties. Data may be shared with trusted service providers, including Render as our hosting provider, who assist in operating our service, always under strict confidentiality agreements and limited to necessary data processing.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Data Security</h2>
+            <p>
+                We implement appropriate technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction, including secure password hashing and encrypted communications. However, please recognize that no method of transmission or electronic storage is completely secure.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Cookies and Tracking Technologies</h2>
+            <p>
+                KanMind itself does not actively use cookies or similar tracking technologies that require user consent, and no cookie banner is implemented. Nevertheless, please be aware that external services or third-party elements integrated into this site or through Render’s hosting infrastructure may independently collect cookies or tracking data beyond our control or responsibility.
+            </p>
+            <p>
+                You may control or block cookies via your browser settings if desired.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Your Rights</h2>
+            <p>
+                You have the right to:
+            </p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request correction or deletion of your data</li>
+                <li>Withdraw consent at any time for data processing based on consent</li>
+                <li>Request data portability</li>
+                <li>Object to certain data processing activities</li>
+                <li>File a complaint with a data protection authority if you believe your rights are violated</li>
+            </ul>
+            <p>
+                To exercise these rights, please contact us at <a href="mailto:business@heistermann-solutions.de" class="link_secondary">business@heistermann-solutions.de</a>.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Data Retention</h2>
+            <p>
+                We retain your personal data as long as necessary to provide the service and fulfill legal obligations or legitimate business purposes. When no longer required, we securely delete or anonymize your data.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Changes to this Privacy Policy</h2>
+            <p>
+                This Privacy Policy is current as of October 3, 2025. We may update it occasionally to reflect changes in our practices or legal obligations. Any significant changes will be communicated via our service or email. Please review periodically.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Severability Clause</h2>
+            <p>
+                If any provision of this Privacy Policy is found to be invalid or unenforceable, the remaining provisions will continue in full force and effect.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Contact Information</h2>
+            <p>
+                If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+            </p>
+            <address>
+                KanMind<br>
+                Email: <a href="mailto:business@heistermann-solutions.de" class="link_secondary">business@heistermann-solutions.de</a><br>
+                Address: Mutter-Teresa-Weg 6, 46325 Borken, Germany
+            </address>
+        </section>
+
+    </main>
+    <footer class="main_footer  w_full">
+        <nav class="d_flex_cs_gl">
+            <a href="../imprint/index.html" class="link">Imprint</a>
+        </nav>
+    </footer>
+</body>
+</html>
